@@ -10,7 +10,8 @@ body {
 	/*width: 1170px;
 	margin: 0 auto;*/
 }
-.conteiner {
+.container {
+	overflow: hidden;
 	width: 1170px;
 	margin: 0 auto;
 }
