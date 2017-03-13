@@ -42,6 +42,9 @@ a:hover {
 	padding: 15px 0;
 	background: #4cb1ca;
 }
+.top-row a {
+	color: #fff
+}
 .settings {
 	float: left;
 }
@@ -53,6 +56,10 @@ a:hover {
 	margin: 0;
 	list-style: none;
 	float: right;
+}
+.top-nav b {
+	color: #fff;
+	margin: 0 5px;
 }
 .top-nav li {
 	display: inline-block;
@@ -309,15 +316,18 @@ top: 19px; left: -21px;
 	color: #4cb1ca;
 }
 .banner-first {
+	text-align: center;
 	width: 235px;
 	height: 440px;
 	border: 1px solid #eff1f0;
 	box-shadow: 0 0 5px rgba(122,122,122,0.5)
 }
-.banner-first h2 {
+.banner h2 {
 	font-size: 24px;
-	text-align: center;
 	margin: 20px;
+}
+.banner p {
+	margin: 0 10px;
 }
 .banner-first img {
 	width: 205px;
@@ -328,6 +338,7 @@ top: 19px; left: -21px;
 	width: 130px;
 }
 .banner-second {
+	text-align: center;
 	margin: 30px 0;
 	width: 235px;
 	height: 277px;
