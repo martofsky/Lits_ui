@@ -26,7 +26,7 @@ a:hover {
 }
 .container {
 	margin: 0 auto;
-	width: 1100px;
+	width: 1040px;
 }
 .clearfix:before, .clearfix:after {
 	content: "\0020"; display: block; height: 0; visibility: hidden; 
@@ -59,8 +59,8 @@ a:hover {
 }
 .menu-row {
 	padding: 38px 0;
-	height: 20px;
-	line-height: 20px;
+	height: 30px;
+	line-height: 30px;
 }
 .main-nav {
 	float: left;
@@ -74,7 +74,6 @@ a:hover {
 	display: inline-block;
 }
 .menu-left {
-	vertical-align: middle;
 	display: inline-block;
 	float: left;
 }
@@ -89,6 +88,22 @@ a:hover {
 .menu-right {
 	display: inline-block;
 	float: right;
+}
+.menu-right .btn {
+	margin: 0 5px;
+	float: right;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	width: 32px;
+	height: 32px;
+	background: #7db122;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	border-radius: 16px;
+}
+.menu-right .btn:hover {
+	background: #f20a0a;
 }
 .search {
 	border: 1px solid #c6c6c6;
@@ -107,21 +122,8 @@ a:hover {
 	position: relative;
 	height: 475px;
 	width: 100%;
-}
-.carousel-item {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	opacity: 0;
-}
-.carousel-item-text {
-	position: absolute;
-	left: 15%;
-	top: 50%;
-	transform: translate(0, -50%);
-	display: block;
+	background: url(../images/carousel-header-first.jpg) no-repeat;
+	background-size: cover;
 }
 .arrow {
 	position: absolute;
@@ -139,49 +141,32 @@ a:hover {
 	right: 5%;
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
+	transform: translate(0, -51%);
 }
-@media(max-width:480px){
-.arrow {
-background-size: 10px;
-background-position: 10px 50%;
-}
-}
+.carousel-item-text {
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	transform: translate(0, -50%);
 
-[id^="target-item"] {
-display: none;
 }
-.item-first {
-	background: url(../images/carousel-header-first.jpg) no-repeat;
-	z-index: 2;
-	opacity: 0;
+.carousel-item-text h2 {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0 15px;
+	color: #fff;	
 }
-.item-second {
-	background: url(../images/carousel-header-second.jpg) no-repeat;
-}
-.item-third {
-	background: url(../images/carousel-header-third.jpg) no-repeat;
-}
-*:target~.item-first{          
-opacity:0;
-}
-#target-item-first:target~.item-first{
-opacity:1;
-}
-#target-item-second:target~.item-second,#target-item-third:target~.item-third{
-z-index:3;
-opacity:1;
-}
-
 /*--carousel header banner end--*/
 .products-body {
-
+	margin: 45px 0;
 }
 .products {
+	width: 1040px;
 	display: inline-block;
+	position: relative;
 }
 /*product-boxes*/
 .box-group {
-	max-width: 900px;
+	max-width: 800px;
 	float: left;
 }
 .box-group h2 {
@@ -193,15 +178,50 @@ opacity:1;
 .box {
 	margin: 0 25px 20px 0 ;
 	float: left;
-	width: 200px; height: 300px;
+	width: 240px; height: 320px;
 	position: relative;
-	border: 1px solid #BBB;
-	background: #EEE;
+	border: 1px solid #eff1f0;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+	background: #fff;
+}
+.box img {
+	width: 215px;
+	height: 225px;
+	margin: 12px;
+}
+.box p {
+	margin: 0;
+}
+.box .btn {
+	text-align: center;
+	font-size: 30px;
+	float: right;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	background: #7db122;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
+.box .btn:hover {
+	background: #f20a0a;
+}
+.box-bottom {
+	margin: 0 12px;
+}
+.old-price {
+	text-decoration: line-through;
+	font-size: 14px;
+}
+.price {
+	color: #7db122;
+	font-size: 18px;
 }
 .ribbon {
 	position: absolute;
 	right: -5px; top: -5px;
-	z-index: 1;
+	z-index: 2;
 	overflow: hidden;
 	width: 75px; height: 75px;
 	text-align: right;
@@ -259,7 +279,58 @@ transform: rotate(-45deg);
 -webkit-transform: rotate(-45deg);
 top: 19px; left: -21px;
 }
+
 .news {
+	display: block;
 	float: right;
 	width: 240px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.top-border {
+	width: 235px;
+	background: #4cb1ca;
+	padding: 4px 0 0;	
+}
+.radio-buttons-box {
+	text-align: center;
+	width: 235px;
+	height: 40px;
+	border: 1px solid #eff1f0;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5)
+}
+.radio-buttons {
+	color: #7db122;
+	line-height: 40px;
+	margin: 0 5px;
+}
+.radio-buttons:hover {
+	color: #4cb1ca;
+}
+.banner-first {
+	width: 235px;
+	height: 440px;
+	border: 1px solid #eff1f0;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5)
+}
+.banner-first h2 {
+	font-size: 24px;
+	text-align: center;
+	margin: 20px;
+}
+.banner-first img {
+	width: 205px;
+	margin: 45px 15px 15px;
+}
+.banner-first .btn {
+	height: 44px;
+	width: 130px;
+}
+.banner-second {
+	margin: 30px 0;
+	width: 235px;
+	height: 277px;
+	border: 1px solid #eff1f0;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5)
 }
