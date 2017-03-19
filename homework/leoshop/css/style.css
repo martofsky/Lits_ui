@@ -110,7 +110,7 @@ a:hover {
 	float: right;
 }
 .menu-right .btn {
-	margin: 0 5px;
+	margin: 0 4px;
 	float: left;
 	text-align: center;
 	font-size: 20px;
@@ -125,11 +125,16 @@ a:hover {
 .menu-right .btn:hover {
 	opacity: 0.7;
 }
+.menu-right b {
+	font-size: 15px;
+	margin-left: 9px;
+}
 .search {
 	float: left;
 	border: 1px solid #c6c6c6;
 	padding: 0 5px;
 	display: inline-block;
+	margin-right: 12px;
 }
 .search input {
 	border: none;
@@ -227,7 +232,7 @@ a:hover {
 	line-height: 67px;
 	color: #cdcdcd;
 }
-/*--carousel header banner end--*/
+/*--carousel end--*/
 .shop-body {
 	margin: 45px 0;
 }
@@ -236,10 +241,8 @@ a:hover {
 	display: inline-block;
 	position: relative;
 }
-/*product-boxes*/
 .products-area {
 	width: 75%;
-
 }
 .products-area h2 {
 	display: block;
@@ -361,7 +364,7 @@ a:hover {
 .aside {
 	display: block;
 	float: right;
-	width: 25%;
+	width: 24%;
 	position: absolute;
 	top: 0;
 	right: 0;
