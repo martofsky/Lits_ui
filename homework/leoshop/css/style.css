@@ -34,7 +34,7 @@ a:hover {
 }
 .top-row {
 	font-size: 13px;
-	min-height: 30px;
+	min-height: 23px;
 	padding: 10px 0;
 	background: #4cb1ca;
 }
@@ -56,10 +56,11 @@ a:hover {
 .top-nav li:after {
 	content: '|';
 	color: #fff;
-	margin-left: 3px;
+	margin: 10px;
 }
 .top-nav li:last-child:after {
 	content: ' ';
+	margin: 0;
 }
 .top-nav b {
 	color: #fff;
@@ -73,8 +74,9 @@ a:hover {
 	min-height: 30px;
 	line-height: 30px;
 }
-.menu-row a, b {
+.menu-row a {
 	color: #656565;
+	font-size: 17px;
 }
 .main-nav {
 	float: left;
@@ -86,6 +88,7 @@ a:hover {
 }
 .main-nav li {
 	display: inline-block;
+	margin-right: 15px;
 }
 .menu-left {
 	display: inline-block;
