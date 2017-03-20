@@ -243,10 +243,15 @@ a:hover {
 }
 .products-area {
 	width: 75%;
+	display: inline-block;
 }
 .products-area h2 {
 	display: block;
 	margin: 0 0 18px 0;
+	float: left;
+}
+.box-area {
+	float: left;
 }
 .box {
 	margin: 0 2% 2% 0 ;
@@ -365,9 +370,6 @@ a:hover {
 	display: block;
 	float: right;
 	width: 24%;
-	position: absolute;
-	top: 0;
-	right: 0;
 }
 .ad-box {
 	margin-bottom: 30px;
