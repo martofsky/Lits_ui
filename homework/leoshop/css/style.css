@@ -219,7 +219,6 @@ a:hover {
 .slick-arrow.slick-next {
 	right: 50%;
 	margin-right: -595px;
-	
 }
 .slick-arrow.slick-next:after {
 	content: '\f105';
@@ -242,13 +241,11 @@ a:hover {
 	position: relative;
 }
 .products-area {
-	width: 75%;
-	display: inline-block;
+	width: 74%;
+	float: left;
 }
 .products-area h2 {
-	display: block;
 	margin: 0 0 18px 0;
-	float: left;
 }
 .box-area {
 	float: left;
