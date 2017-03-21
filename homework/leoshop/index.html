@@ -39,30 +39,31 @@
 			<div class="menu-row">
 				<div class="container">
 					<a href="#" class="logo"><h1>LEO SHOP</h1></a>
-					<div class="menu-left">
-						
-						<nav class="main-nav">
-							<ul>
-								<li><a href="#">HOME</a></li>
-								<li><a href="#">WOMEN</a></li>
-								<li><a href="#">MEN</a></li>
-								<li><a href="#">OTHER</a></li>
-								<li><a href="#">PURCHASE</a></li>
-							</ul>
-						</nav>
+					<div class="mobile-nav">
+						<div class="menu-left">
+							<nav class="main-nav">
+								<ul>
+									<li><a href="#">HOME</a></li>
+									<li><a href="#">WOMEN</a></li>
+									<li><a href="#">MEN</a></li>
+									<li><a href="#">OTHER</a></li>
+									<li><a href="#">PURCHASE</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="menu-right">
+							<form class="search">
+							<input type="search" name="q" placeholder="Search..." />
+							<a href="#" id=""><i class="fa fa-search" aria-hidden="true"></i></a>
+							</form>
+							<a href="#" class="btn"><i class="fa fa-tag" aria-hidden="true"></i></a>
+							<a href="#" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a><span><a href="#" class="menu-right"><b>CART (0)</b></a></span>
+						</div>
 					</div>
-					<div class="menu-right">
-						<form class="search">
-						<input type="search" name="q" placeholder="Search..." />
-						<a href="#" id=""><i class="fa fa-search" aria-hidden="true"></i></a>
-						</form>
-						<a href="#" class="btn"><i class="fa fa-tag" aria-hidden="true"></i></a>
-						<a href="#" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a><span><a href="#" class="menu-right"><b>CART (0)</b></a></span>
-					</div>
+					<a href="#" class="btn-burger"><i class="fa fa-bars" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</header>
-
 <!--carousel header banner start-->
 			<div class="regular slider">
 				<div class="slide">
@@ -413,7 +414,9 @@
         fade: true,
         arrows: false
       });
-
+		$('.btn-burger').click(function () {
+		  $(this).parent().toggleClass('open');
+			});
 
     });
   </script>
