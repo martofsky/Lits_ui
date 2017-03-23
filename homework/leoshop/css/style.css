@@ -257,7 +257,7 @@ a:hover {
 	background: #fff;
 	padding: 10px;
 }
-.box:nth-child(3nd) {
+.box:nth-child(3n) {
 	margin: 0; 
 }
 .box img {
