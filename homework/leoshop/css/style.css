@@ -386,10 +386,9 @@ a:hover {
 	height: auto;
 	margin: 8px 0;
 }
-.mail-box-text:after {
-	content: '';
-	border-bottom: : 1px solid black;
-	border-width: 10px;
+.mail-box-text p {
+	border-width: 80%;
+	border-bottom: 1px solid #ededed;
 }
 .ad-box .btn {
 	text-align: center;
