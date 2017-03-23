@@ -697,4 +697,14 @@ input[type=submit] {
 	.slider .text-block {
 		left: 70%;
 	}
+	.products-area {
+		width: 100%;
+	}
+	.aside {
+		width: 100%;
+	}
+	.ad-box {
+		width: 24%;
+		display: inline-block;
+	}
 }
