@@ -228,7 +228,7 @@ a:hover {
 }
 /*--carousel end--*/
 .shop-body {
-	margin: 45px 0;
+	margin: -5px 0 23px;
 }
 .box-group {
 	width: 100%;
@@ -236,22 +236,23 @@ a:hover {
 	position: relative;
 }
 .products-area {
-	width: 74%;
+	width: 75%;
 	float: left;
 }
 .products-area h2 {
-	margin: 0 0 14px 0;
+	margin: 0 0 15px 0;
 }
 .box-area {
 	width: 100%;
 	float: left;
+    margin-bottom: 21px;
 }
 .box {
-	margin: 0 3% 2% 0 ;
+	margin: 0 3% 3.5% 0 ;
 	display: inline-block;
 	vertical-align: top;
 	width: 28%; 
-	min-height: 320px;
+	min-height: 298px;
 	position: relative;
 	box-shadow: 0 0 5px rgba(122,122,122,0.5);
 	background: #fff;
@@ -265,19 +266,19 @@ a:hover {
 	height: auto;
 }
 .box p {
-	margin: 0;
+	margin: 3px;
 }
 .box .btn {
 	position: absolute;
-	bottom: 7%;
-	right: 2%;
+	bottom: 8%;
+	right: 6%;
 	text-align: center;
-	font-size: 22px;
+	font-size: 21px;
 	line-height: 50px;
 	float: right;
 	color: #fff;
-	width: 50px;
-	height: 50px;
+	width: 46px;
+	height: 46px;
 	background: #7db122;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
@@ -296,6 +297,9 @@ a:hover {
 .price {
 	color: #7db122;
 	font-size: 18px;
+}
+.price-box {
+	margin: -7px 0 0 3px;
 }
 .ribbon {
 	position: absolute;
@@ -368,40 +372,45 @@ a:hover {
 	width: 24%;
 }
 .ad-box {
-	margin-bottom: 30px;
+	margin: 5px 0 30px 8px;
 	overflow: hidden;
 	padding: 14px;
 	border-top: 4px solid #4cb1ca;
 	text-align: center;
-	width: 90%;
+	width: 84%;
 	box-shadow: 0 0 5px rgba(122,122,122,0.5);
 	position: relative;
 }
 .ad-box img {
 	width: 100%;
 	height: auto;
-	margin: 25px 0;
+	margin: 8px 0;
+}
+.mail-box-text:after {
+	content: '';
+	border-bottom: : 1px solid black;
+	border-width: 10px;
 }
 .ad-box .btn {
 	text-align: center;
 	position: absolute;
-	bottom: 50px;
+	bottom: 23px;
 	left: 50%;
 	transform: translate(-50%, 0);
 	color: #fff;
-	width: 60%;
+	width: 64%;
 	line-height: 44px;
 	background: #4cb1ca;
 }
 .advertise h2 {
 	font-size: 24px;
-	margin: 15px 20px;
+	margin: 2px 20px;
 }
 .advertise p {
 	margin: 0 10px;
 }
 .advertise .slick-dots {
-	margin: 0 0 0 -6%;
+	margin: -27px 0 0 -6%;
 	width: 112%;
 	z-index: 44;
 	list-style: none;
@@ -468,17 +477,15 @@ input[type=submit] {
 	transform: translate(0, 20%);
 }
 .delivery-row a {
-	margin: 14px 10px 0 0;
+	margin: 7px 10px 0 -2px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 37px;
 	float: left;
 	color: #39a0b9;
-	width: 50px;
-	height: 50px;
+	width: 64px;
+	height: 64px;
 	background: #fff;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 25px;
+	border-radius: 50%;
 }
 .delivery-row a:hover {
 	opacity: 0.7;
