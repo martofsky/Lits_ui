@@ -657,9 +657,6 @@ input[type=submit] {
 		display: inline-block;
 		vertical-align: middle;
 	}
-	.open {
-		background: #f00;
-	}
 	.slider .text-block {
 		left: 60%;
 	}
