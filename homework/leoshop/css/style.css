@@ -138,6 +138,12 @@ a:hover {
 .menu-right p {
 	margin: 0;
 }
+.lang, .Currency {
+	background: #4cb1ca;
+	border: none;
+	color: #fff;
+	outline: none;
+}
 /*--carousel header banner start--*/
 .slider .slide {
 	position: relative;
@@ -227,6 +233,7 @@ a:hover {
 /*--carousel end--*/
 .shop-body {
 	margin: 0 0 23px;
+	padding-top: 2%;
 }
 
 .products-area {
@@ -466,10 +473,10 @@ input[type=submit] {
 	position: relative;
 }
 .footer-block {
+	padding-top: 1%;
 	font-size: 21px;
 	display: inline-block;
 	width: 49%;
-	transform: translate(0, 20%);
 }
 .delivery-row a {
 	margin: 7px 10px 0 -2px;
@@ -489,11 +496,10 @@ input[type=submit] {
 	color: #fff;
 	background: #39a0b9;
 	position: relative;
-	padding: 45px 0 0;
+	padding: 41px 0 43px 0;
 }
 .social-tab {
-	margin-right: 1.7%;
-	width: 23%;
+	margin-right: 5%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -503,6 +509,9 @@ input[type=submit] {
 }
 .alt-content {
 	margin: 20px 0 0;
+}
+.alt-content a {
+	color: #fff;
 }
 .social-tab ul {
 	list-style: none;
@@ -517,15 +526,18 @@ input[type=submit] {
 	margin: 0;
 	content: '';
 }
+.social-tab:last-child {
+	margin: 0;
+}
 .social-tab i {
-	margin-right: 7px;
+	margin-right: 4px;
 	color: #39a0b9;
 	text-align: center;
 	line-height: 43px;
-	font-size: 22px;
+	font-size: 20px;
 	background: #fff;
-	width: 43px;
-	height: 43px;
+	width: 38px;
+	height: 38px;
 	border-radius: 50%;
 }
 .social-ico {
@@ -562,6 +574,7 @@ input[type=submit] {
 	float: left;
 }
 .bottom-nav {
+	text-align: right;
 	width: 50%;
 	padding: 0;
 	margin: 0;
@@ -618,9 +631,8 @@ input[type=submit] {
 		right: 0;
 		width: 380px;
 		background: #4cb1ca;
-		padding: 20px;
+		padding: 60px 20px 20px;
 		z-index: 9999;
-		margin: 60px 0 0;
 		transform: translateX(100%);
 		transition: all .25s ease-in-out;
 		opacity: 0;
@@ -640,6 +652,23 @@ input[type=submit] {
 		position: absolute;
 		top: 0;
 		right: 50px;
+		z-index: 9998;
+	}
+	.open .btn-burger{
+		z-index: 9999;
+	}
+	.btn-burger:after {
+		content: '';
+		position: fixed;
+		display: none;
+		top: 0;
+		left: 0;
+		z-index: 9997;
+		width: 100vw;
+		height: 100vh;
+	}
+	.open .btn-burger:after {
+		display: block;
 	}
 	.menu-row {
 		padding: 15px 0;

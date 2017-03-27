@@ -1,0 +1,49 @@
+.custom-forms {
+	margin: 50px 50px;
+}
+.nice-radio,
+.nice-checkbox {
+	margin-bottom: 50px;
+}
+.nice-radio {
+	margin-bottom: 50px;
+}
+.custom-forms input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+}
+.nice-checkbox label {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+	position: relative;
+}
+.nice-checkbox label:after {
+	content: '';
+	position: absolute;	
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #f00;
+}
+.nice-checkbox label:before {
+	content: '✔';
+	position: absolute;
+	top: 0;
+	left: 3px;
+	opacity: .1;
+	transition: all .25s ease-in-out;
+}
+.nice-checkbox input[type=checkbox]:checked ~ label:before {
+	opacity: 1;
+	display: block;
+}
+.nice-checkbox input[type=checkbox]:checked ~ label {
+	font-weight: bold;
+}
+
+.video-container iframe {
+	width: 100%;
+
+}

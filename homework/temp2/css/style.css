@@ -1,0 +1,80 @@
+.custom-forms {
+	margin: 50px 350px;
+}
+.nice-radio,
+.nice-checkbox {
+	margin-bottom: 50px;
+}
+.nice-radio {
+	margin-bottom: 50px;
+}
+
+.nice-checkbox input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+	display: none;
+}
+.nice-checkbox label {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+	position: relative;
+}
+.nice-checkbox label:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #f00;
+}
+.nice-checkbox label:before {
+	content: '✔';
+	position: absolute;
+	top: 0;
+	left: 3px;
+	opacity: 0;
+	transition: all .25s ease-in-out;
+}
+.nice-checkbox input[type=checkbox]:checked ~ label:before {
+	opacity: 1;
+}
+.nice-checkbox2 {
+	margin-bottom: 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nice-checkbox2 input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+	display: none;
+}
+.nice-checkbox2 span {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+	position: relative;
+}
+.nice-checkbox2 span:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #f00;
+}
+.nice-checkbox2  span:before {
+	content: '✔';
+	position: absolute;
+	top: 0;
+	left: 3px;
+	opacity: 0;
+	transition: opacity .25s ease-in-out, transform .5s ease-in-out;
+}
+.nice-checkbox2  input[type=checkbox]:checked ~ span:before {
+	opacity: 1;
+	transform: rotate(590deg);
+}
