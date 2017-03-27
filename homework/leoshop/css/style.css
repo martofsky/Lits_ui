@@ -624,6 +624,12 @@ input[type=submit] {
 	.mobile-header {
 		display: block;
 	}
+	.menu-right input[type="search"]::-webkit-input-placeholder {
+	color: #fff;
+	}
+	.settings, .top-nav {
+		margin: 0 0 20px;
+	}
 	.mobile-nav {
 		position: fixed;
 		top: 0;
@@ -631,7 +637,8 @@ input[type=submit] {
 		right: 0;
 		width: 380px;
 		background: #4cb1ca;
-		padding: 60px 20px 20px;
+		margin-top: 60px;
+		padding: 0 20px 20px;
 		z-index: 9999;
 		transform: translateX(100%);
 		transition: all .25s ease-in-out;
@@ -645,17 +652,17 @@ input[type=submit] {
 	}
 	.open .mobile-nav {
 		transform: translateX(0);
-		opacity: .9;
+		opacity: 1;
 	}
 	.btn-burger {
 		display: block;
 		position: absolute;
 		top: 0;
-		right: 50px;
+		right: 5%;
 		z-index: 9998;
 	}
 	.open .btn-burger{
-		z-index: 9999;
+		z-index: 9998;
 	}
 	.btn-burger:after {
 		content: '';
@@ -750,9 +757,78 @@ input[type=submit] {
 	.ad-box {
 		width: 24%;
 		display: inline-block;
+		vertical-align: top;
 	}
 	.footer-block {
 		width: 100%;
 		min-height: 100px;
+	}
+	.social-tab {
+		width: 47%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.slider .text-block {
+		left: 15%;
+	}
+	.slider .text-block .title,
+	.slider .text-block {
+		font-size: 19px;
+		line-height: 30px;
+	}
+	.slider .text-block span:first-child {
+		font-size: 19px;
+	}
+	.box {
+		width: 40%;
+	}
+	.box:nth-child(2n) {
+		margin: 0;
+	}
+	.box:nth-child(3n) {
+		margin: 0 3% 3.5% 0;
+	}
+	.ad-box:first-child {
+		display: none;
+	}
+	.ad-box {
+		margin: 0;
+		width: 87%;
+	}
+	.end-row {
+		padding: 3px 0 25px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.slider .text-block {
+		left: 30%;
+	}
+	.mobile-nav {
+		width: 90%;
+	}
+	.social-tab {
+		width: 46%;
+	}
+}
+@media screen and (max-width: 320px) {
+	.slider .text-block {
+		left: 51%;
+	}
+	.slider .text-block .title,
+	.slider .text-block {
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.search {
+		margin: 0;
+	}
+	.box {
+		width: 90%;
+	}
+	.box:nth-child(2n) {
+		margin-bottom: 3.5%;
+	}
+	.social-tab {
+		width: 90%;
 	}
 }
