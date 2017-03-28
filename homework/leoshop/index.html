@@ -15,13 +15,13 @@
 					<div class="container">
 						<form action="#" class="settings">
 							<label for="lang">Language</label>
-							<select class="lang">
+							<select id="lang">
 								<option>English</option>
 								<option>Spanish</option>
 								<option>Russkyi</option>
 							</select>
 							<label for="Currency">Currency</label>
-							<select class="Currency">
+							<select id="Currency">
 								<option>USD</option>
 								<option>HRN</option>
 								<option>RON</option>
@@ -63,7 +63,6 @@
 								<li><a href="#">Sign Up</a></li>
 							</ul>
 						</div>
-						<div class="menu-left">
 							<nav class="main-nav">
 								<ul>
 									<li><a href="#">HOME</a></li>
@@ -73,14 +72,14 @@
 									<li><a href="#">PURCHASE</a></li>
 								</ul>
 							</nav>
-						</div>
 						<div class="menu-right">
 							<form class="search">
 							<input type="search" name="q" placeholder="Search..." />
 							<a href="#" id=""><i class="fa fa-search" aria-hidden="true"></i></a>
 							</form>
 							<a href="#" class="btn"><i class="fa fa-tag" aria-hidden="true"></i></a>
-							<a href="#" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a><span><a href="#" class="menu-right"><b>CART (0)</b></a></span>
+							<a href="#" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<span><a href="#" class="menu-right">CART (0)</a></span>
 						</div>
 					</div>
 					<a href="#" class="btn-burger"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -115,9 +114,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="shop-body">
+			<div class="main">
 				<div class="container">
-					<div class="products-area clearfix">
+					<div class="content">
 						<h2>FEATURED PRODUCTS</h2>
 						<div class="box-area">
 							<div class="box">
@@ -296,43 +295,41 @@
 						</div>
 					</div>
 					<div class="aside clearfix">
-						<div class="advertise">
-							<div class="ad-box">
-								<div class="banner-alt">
-									<div class="ad-slide">
-										<h2>FEATURED GLASS</h2>
-										<img src="images/img-banner.jpg" alt="featured">
-										<a href="#" class="btn">Check it Out</a>
-									</div>
-									<div class="ad-slide">
-										<h2>ANOTHER SLIDE</h2>
-										<img src="images/img-banner.jpg" alt="featured">
-										<a href="#" class="btn">Check it Out</a>
-									</div>
-									<div class="ad-slide">
-										<h2>ANOTHER SLIDE</h2>
-										<img src="images/img-banner.jpg" alt="featured">
-										<a href="#" class="btn">Check it Out</a>
-									</div>
+						<div class="ad-box">
+							<div class="banner-alt">
+								<div class="ad-slide">
+									<h2>FEATURED GLASS</h2>
+									<img src="images/img-banner.jpg" alt="featured">
+									<a href="#" class="btn">Check it Out</a>
+								</div>
+								<div class="ad-slide">
+									<h2>ANOTHER SLIDE</h2>
+									<img src="images/img-banner.jpg" alt="featured">
+									<a href="#" class="btn">Check it Out</a>
+								</div>
+								<div class="ad-slide">
+									<h2>ANOTHER SLIDE</h2>
+									<img src="images/img-banner.jpg" alt="featured">
+									<a href="#" class="btn">Check it Out</a>
 								</div>
 							</div>
-							<div class="ad-box">
-								<div class="mail-box-text">
-									<h2>NEWLETTER SIGNUP</h2>
-									<p>Lorem ipsum dolor sit amen, dolor imun ra adlip.</p>
-								</div>
-								<form action="#">
-									<input type="email">
-									<input type="submit" value="Subscribe">
-								</form>
+						</div>
+						<div class="ad-box">
+							<div class="mail-box-text">
+								<h2>NEWLETTER SIGNUP</h2>
+								<p>Lorem ipsum dolor sit amen, dolor imun ra adlip.</p>
 							</div>
+							<form action="#">
+								<input type="email">
+								<input type="submit" value="Subscribe">
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 			<footer>
 				<div class="footer-body">
-					<div class="delivery-row">
+					<div class="footer-row">
 						<div class="container">
 							<div class="footer-block">
 								<a href="#" class="btn"><i class="fa fa-truck" aria-hidden="true"></i></a>
@@ -346,19 +343,19 @@
 					</div>
 					<div class="contact-row">
 						<div class="container">
-							<div class="social-tab">
+							<div class="info-tab">
 								<div class="text-block">Facebook</div>
 								<div class="alt-content">
 									<a href="#"><img src="images/social-block.png" alt=""></a>
 								</div>
 							</div>
-							<div class="social-tab">
+							<div class="info-tab">
 								<div class="text-block">From twitter</div>
 								<div class="alt-content">
 									<a href="#"><img src="images/social-block-tw.png" alt=""></a>
 								</div>
 							</div>
-							<div class="social-tab">
+							<div class="info-tab">
 								<div class="text-block">Information</div>
 								<div class="alt-content">
 									<ul>
@@ -371,7 +368,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="social-tab">
+							<div class="info-tab">
 								<div class="text-block">Contact us</div>
 								<ul class="alt-content">
 									<li>Leo Store</li>
@@ -391,9 +388,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="end-row">
+					<div class="contscts-row">
 						<div class="container">
-							<div class="end-row-left">
+							<div class="contscts-row-left">
 								<p>© Copyright 2013 Css Author, All Rights Reserved.</p>
 							</div>
 								<ul class="bottom-nav">
