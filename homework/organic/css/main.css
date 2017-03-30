@@ -6734,6 +6734,9 @@ body {
   background: #fff;
   min-height: 100vh;
 }
+.navbar a:hover {
+  background: transparent;
+}
 .main-image {
   margin-top: -164px;
   width: 100%;
@@ -6777,19 +6780,77 @@ body {
   max-width: 410px;
   color: #fff;
 }
-.main .slider .slide {
-  position: relative;
+.main .aside {
+  border-right: 1px solid #eaeaea;
 }
-.main .slider .text-block {
+.main .slide p {
+  color: #fe992a;
+}
+.main .slide p:before {
+  content: '\201C';
+  font-size: 40px;
+}
+.main .slide p:after {
+  content: '\201E';
+  font-size: 40px;
+}
+.main .slick-arrow {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  color: #fff;
-  width: 480px;
-  margin: 0 0 0 -480px;
-  transform: translate(0, -50%);
+  transform: translate(0, -100%);
+  width: 30px;
+  height: 30px;
+  background: #fe992a;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 3;
+  cursor: pointer;
+  font-size: 0;
+  text-align: center;
+  line-height: 0;
+  outline: none;
+}
+.main .slick-arrow:hover {
+  opacity: 0.7;
+}
+.main .slick-arrow.slick-prev {
+  top: 100%;
+  right: 0;
+  transform: translate(-99%, -101%);
+}
+.main .slick-arrow.slick-prev:after {
+  content: '<';
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  line-height: 30px;
+  color: #cdcdcd;
+}
+.main .slick-arrow.slick-next {
+  top: 100%;
+  right: 0;
+}
+.main .slick-arrow.slick-next:after {
+  content: '>';
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  line-height: 30px;
+  color: #cdcdcd;
 }
 .main h2 {
   color: #fe992a;
+}
+.main .row {
+  margin-bottom: 10%;
+}
+.footer {
+  background: #e77572;
+  padding: 50px 0;
 }

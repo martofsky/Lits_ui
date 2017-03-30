@@ -2,6 +2,11 @@ body {
 	background: @main-bg;
 	min-height: 100vh;
 }
+.navbar {
+	a:hover {
+		background: transparent;
+	}
+}
 .main-image {
 	margin-top: -164px;
 	width: 100%;
@@ -47,20 +52,79 @@ body {
 	}
 }
 .main {
-	.slider .slide {
-		position: relative;
+	.aside {
+		border-right: 1px solid #eaeaea;
 	}
-	.slider .text-block {
+	.slide p {
+		color: #fe992a;
+		&:before {
+			content: '\201C';
+			font-size: 40px;
+		}
+		&:after {
+			content: '\201E';
+			font-size: 40px;
+		}
+	}
+	.slick-arrow {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		z-index: 2;
-		color: #fff;
-		width: 480px;
-		margin: 0 0 0 -480px;
-		transform: translate(0, -50%);
+		transform: translate(0, -100%);
+		width: 30px;
+		height: 30px;
+		background: #fe992a;
+		border: 0;
+		padding: 0;
+		overflow: hidden;
+		z-index: 3;
+		cursor: pointer;
+		font-size: 0;
+		text-align: center;
+		line-height: 0;
+		outline: none;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	.slick-arrow.slick-prev {
+		top: 100%;
+		right: 0;
+		transform: translate(-99%, -101%);
+		&:after {
+			content: '<';
+			font-family: 'FontAwesome';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			font-size: 15px;
+			line-height: 30px;
+			color: #cdcdcd;
+		}
+	}
+	.slick-arrow.slick-next {
+		top: 100%;
+		right: 0;
+		&:after {
+			content: '>';
+			font-family: 'FontAwesome';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			font-size: 15px;
+			line-height: 30px;
+			color: #cdcdcd;
+		}
 	}
 	h2 {
 		color: #fe992a;
 	}
+	.row {
+		margin-bottom: 10%;
+	}
+}
+.footer {
+	background: #e77572;
+	padding: 50px 0;
+
 }

@@ -295,7 +295,7 @@
 						</div>
 					</div>
 					<div class="aside clearfix">
-						<div class="ad-box">
+						<div class="block">
 							<div class="banner-alt">
 								<div class="ad-slide">
 									<h2>FEATURED GLASS</h2>
@@ -314,8 +314,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="ad-box">
-							<div class="mail-box-text">
+						<div class="block">
+							<form class="mail-box-text">
 								<h2>NEWLETTER SIGNUP</h2>
 								<p>Lorem ipsum dolor sit amen, dolor imun ra adlip.</p>
 							</div>
@@ -346,13 +346,13 @@
 							<div class="info-tab">
 								<div class="text-block">Facebook</div>
 								<div class="alt-content">
-									<a href="#"><img src="images/social-block.png" alt=""></a>
+									<a href="#"><img src="images/info-tab-block.png" alt=""></a>
 								</div>
 							</div>
 							<div class="info-tab">
 								<div class="text-block">From twitter</div>
 								<div class="alt-content">
-									<a href="#"><img src="images/social-block-tw.png" alt=""></a>
+									<a href="#"><img src="images/info-tab-block-tw.png" alt=""></a>
 								</div>
 							</div>
 							<div class="info-tab">
@@ -377,7 +377,7 @@
 									<li>+1 489-8888-0099</li>
 									<li><a href="mailto:mail@email.com">mail@email.com</a></li>
 								</ul>
-								<div class="social-ico">
+								<div class="info-tab-ico">
 									<ul>
 										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -414,7 +414,16 @@
         dots: false,
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+        	{
+        	breakpoint: 980,
+        	settings:  {
+        		dots: true,
+        		arrows: false,
+        	}
+        }
+        	]
       });
 
       $(".banner-alt").slick({
