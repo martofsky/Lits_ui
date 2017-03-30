@@ -6736,7 +6736,7 @@ body {
 }
 .nav a:hover,
 .nav a:focus {
-  background-color: #f00;
+  background-color: transparent !important;
 }
 .main-image {
   margin-top: -164px;
