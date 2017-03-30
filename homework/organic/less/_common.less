@@ -2,6 +2,12 @@ body {
 	background: @main-bg;
 	min-height: 100vh;
 }
+.nav {
+	a:hover,
+	a:focus {
+		background-color: #f00;
+	}
+}
 .main-image {
 	margin-top: -164px;
 	width: 100%;
@@ -33,7 +39,6 @@ body {
 		transform: rotate(1.3deg);
 		z-index: 10;
 	}
-
 	img {
 		width: 100%;
 		height: auto;
@@ -50,18 +55,22 @@ body {
 	.aside {
 		border-right: 1px solid #eaeaea;
 	}
-	.slide p {
-		color: #fe992a;
-		&:before {
-			content: '\201C';
-			font-size: 40px;
+	.slide {
+		h1 {
+			color: #fe992a;
+			margin: 0;
+			}
+		h1:last-child {
+			text-align: right;
 		}
-		&:after {
-			content: '\201E';
-			font-size: 40px;
+		p {
+			margin: 0;
+			color: #fe992a;
 		}
 	}
 	.slick-arrow {
+		top: 100%;
+		right: 0;
 		position: absolute;
 		transform: translate(0, -100%);
 		width: 30px;
@@ -81,12 +90,9 @@ body {
 		}
 	}
 	.slick-arrow.slick-prev {
-		top: 100%;
-		right: 0;
 		transform: translate(-99%, -101%);
 		&:after {
 			content: '<';
-			font-family: 'FontAwesome';
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -97,11 +103,8 @@ body {
 		}
 	}
 	.slick-arrow.slick-next {
-		top: 100%;
-		right: 0;
 		&:after {
 			content: '>';
-			font-family: 'FontAwesome';
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -119,9 +122,19 @@ body {
 	}
 }
 .footer {
+	margin: 0;
 	background: #e77572;
 	padding: 50px 0;
 	list-style: none;
+	h4 {
+		font-size: small;
+		font-weight: bold;
+		margin: 0 0 10px;
+	}
+	ul {
+		list-style: none;
+		color: #fff;
+	}
 	.right {
 		float: right;
 		list-style: none;
