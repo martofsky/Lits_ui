@@ -561,6 +561,9 @@ input[type=submit] {
 	height: 38px;
 	border-radius: 50%;
 }
+.info-tab:nth-child(n+3) {
+	width: 20%;
+}
 .social-ico {
 	float: right;
 }

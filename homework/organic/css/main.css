@@ -6738,6 +6738,9 @@ body {
 .nav a:focus {
   background-color: transparent !important;
 }
+.nav .dropdown-menu {
+  background: #a8cecb;
+}
 .main-image {
   margin-top: -164px;
   width: 100%;
