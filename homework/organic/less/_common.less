@@ -3,6 +3,7 @@ body {
 	min-height: 100vh;
 }
 .nav {
+	margin-left: -40px;
 	a:hover,
 	a:focus {
 		background-color: transparent !important;
@@ -93,7 +94,7 @@ body {
 		}
 	}
 	.slick-arrow.slick-prev {
-		transform: translate(-99%, -101%);
+		transform: translate(-100%, -100%);
 		&:after {
 			content: '<';
 			position: absolute;
@@ -138,8 +139,10 @@ body {
 		list-style: none;
 		color: #fff;
 	}
-	.right {
-		float: right;
-		list-style: none;
+	.col-md-3 ul {
+		padding-left: 0;
+	}
+	.col-md-2 {
+		width: 20%;
 	}
 }
