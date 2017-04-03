@@ -566,7 +566,6 @@ input[type=submit] {
 .social-ico i {
 	color: #39a0b9;
 	vertical-align: middle;
-
 }
 .social-ico .btn {
 	display: inline-block;
@@ -583,6 +582,7 @@ input[type=submit] {
 	margin-top: 18px;
 }
 .social-ico li {
+	margin-bottom: 4px;
 	display: inline-block;
 }
 .info-tab i:hover {
