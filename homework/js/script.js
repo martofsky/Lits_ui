@@ -107,7 +107,6 @@ function factor(num) {
 }
 
 
-
 function add(a, b) {
 	return a + b;
 }
@@ -124,3 +123,77 @@ console.log(add(5, 10));
 // Math.sqrt
 
 // validation message = 'wrong values'
+
+
+
+	function add(a, b) {
+		if (check(a, b)) {
+			return a + b;
+		} else {
+			console.log('wrong walue')
+			return;
+		}
+	}
+
+		function divide(a, b) {
+		if (check(a, b) && b != 0) {
+			return a / b;
+		} else {
+			console.log('wrong walue')
+			return;
+		}
+	}
+
+
+	function check(a, b) {
+		return typeof(a) == 'number' && typeof(b) == 'number';
+	}
+
+//---------------------------------
+
+
+//var add = function (...) {....}
+
+//1
+var obj = {}
+addKey(obj, 'test', 50);
+console.log(obj.test);
+
+//2
+addKey = function(test) {
+	var obj = {
+		test: 50
+	}
+	return obj[test];
+}
+//3
+var addKey = (function() {
+    var obj = {
+        a: 50,
+    };
+
+    return function(test) {
+        return obj[test];
+    }
+})();
+
+//4
+var obj = {
+  a:100,
+  b:11,
+  c:200
+}
+
+addKey = function (obj, key, value) {
+  obj[key]=value;
+};
+
+addKey(obj, 'test', 50);
+
+console.log(obj);
+
+addKey = function (obj, key, value) {
+	var obj{}
+  obj['test']=50;
+};
+console.log(obj);

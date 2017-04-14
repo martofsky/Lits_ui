@@ -44,3 +44,24 @@ if (typeof(a, b) == "number") {
 	alert(sqrt(a, b))
 } else {
 	alert("WRONG VALUES")}
+
+//----------
+arr.array.forEach()
+	var obj = {}
+addKey = function (key, value) {
+  obj['test']=50,
+  return obj.test
+};
+console.log(obj.test);
+
+	var obj = {}
+function addKey(key, value) {
+  obj[key]=value;};
+function addkey('test', 50);
+console.log(obj.test);
+
+var obj = {}
+addKey = function {
+obj.test = 50}
+
+
