@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>HTML</title>
+    </head>
+    <body class="body" style="background: rgb(255, 255, 255)">
+        <div class="header">
+            <ul id="menu" style="display: block">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        <button class="btn-bcol">Body Color</button>
+        <button class="btn-add">Div Add</button>
+        <button class="btn-pic">Picture Randomize</button>
+
+        </div>
+
+        <div id="oldDiv" class="content">
+        </div>
+        <div class="footer">
+        </div>
+
+
+        <script>
+
+//  а) первая - менять цвет body (с белого на желтый, и обратно)
+            var bodyOp = document.querySelector(".body")
+            document.querySelector(".btn-bcol").addEventListener("click", () => {
+                if (bodyOp.style.background == "rgb(255, 255, 255)") {
+                    bodyOp.style.background = "rgb(255, 255, 0)";
+                } else {
+                    bodyOp.style.background = "rgb(255, 255, 255)";
+                }
+            });
+
+//  б) вторая - добавлять в определенный div новый div с текстом "Hello world!"
+            document.querySelector(".btn-add").addEventListener("click", () => {
+//              oldDiv.insertBefore(newDiv, oldDiv.childNodes[1]);
+                var newDiv = document.createElement("div");
+                newDiv.innerText = "Hello world!";
+                oldDiv.appendChild(newDiv);
+            });
+            
+// в) третья - из масива с картинками брать случайную картинку и в div добавлять img с этой картинкой 
+// (массив картинок заранее предопределен) / Math.random
+            var newImg = document.createElement("img");
+            oldDiv.appendChild(newImg);
+            var arr = ["http://icons.iconarchive.com/icons/custom-icon-design/flatastic-11/icons-390.jpg", "http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/icons-390.jpg", "http://icons.iconarchive.com/icons/tinylab/android-lollipop-apps/icons-390.jpg"];
+            document.querySelector(".btn-pic").addEventListener("click", () => {
+                var rand = Math.floor(Math.random() * arr.length);
+                newImg.src = arr[rand];
+            });
+        </script>
+    </body>
+</html>
