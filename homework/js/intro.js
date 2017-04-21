@@ -44,7 +44,7 @@ switch(typeof(aaa)) {
 //elem = "style = 'display: none;'";
 
 var c = 5;
-car d = c + 10; // 15
+var d = c + 10; // 15
 d = x - 10; // -5
 d = c * 10; // 50
 d = c / 10; // 0.5
@@ -81,7 +81,7 @@ do {
 	i = i + 1;
 }
 while (i < 10)
-}
+
 
 /* FACTORIAL 10*/
 
@@ -193,7 +193,7 @@ addKey(obj, 'test', 50);
 console.log(obj);
 
 addKey = function (obj, key, value) {
-	var obj{}
+	var obj {}
   obj['test']=50;
 };
 console.log(obj);
