@@ -6,6 +6,10 @@
   src: url(/fonts/agsouvenir_regular.ttf);
   /* Путь к файлу со шрифтом */ }
 
+@font-face {
+  font-family: a_BighausTitulBrk-ExtraBold;
+  src: url(/fonts/a_BighausTitulBrk-ExtraBold.ttf); }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -7622,6 +7626,13 @@ body {
   background-color: #d6e6ef;
   background-size: cover;
   background-repeat: no-repeat; }
+  body .page {
+    overflow: hidden;
+    position: relative; }
+  body input,
+  body textarea {
+    resize: none;
+    outline: none; }
 
 .container {
   max-width: 1000px;
@@ -7636,13 +7647,18 @@ body {
   margin-left: -85px;
   background-color: transparent;
   border-color: transparent; }
-  .navbar-default li {
-    padding-right: 31px;
-    margin-top: -5px; }
-    .navbar-default li a {
-      color: #fff !important;
-      font-size: 17px; }
+  .navbar-default .navbar-nav {
+    padding-left: 305px; }
+    .navbar-default .navbar-nav li {
+      padding-right: 34px;
+      margin-top: -5px; }
+      .navbar-default .navbar-nav li a {
+        color: #fff !important;
+        font-size: 17px; }
+        .navbar-default .navbar-nav li a:hover {
+          text-shadow: 0px 0px 4px #fff; }
   .navbar-default .navbar-brand {
+    position: absolute;
     margin-top: -9px;
     padding: 0 5px 0 57px;
     z-index: 1; }
@@ -7697,7 +7713,8 @@ body {
   text-shadow: none; }
   .carousel-caption h3 {
     color: #127ea5;
-    font-size: 45px; }
+    font-size: 45px;
+    font-family: a_BighausTitulBrk-ExtraBold; }
   .carousel-caption p {
     font-size: 20px; }
 
@@ -7728,34 +7745,35 @@ body {
     position: absolute;
     background: #7ebee0;
     border-radius: 23px; }
-
-.booking-form {
-  font-size: 16px;
-  padding-right: 10%; }
-  .booking-form label {
-    margin-left: -2%;
-    text-align: right;
-    color: #fff;
-    text-shadow: 0px 0px 2px #222;
-    z-index: 10; }
-  .booking-form input, .booking-form textarea, .booking-form select {
-    border: solid 3px #a7d1e6;
-    border-radius: 7px;
-    margin-bottom: 13px;
-    color: #299fca;
-    z-index: 10;
-    padding-left: 0;
-    padding-right: 0; }
-  .booking-form a {
-    z-index: 10; }
-  .booking-form:before {
-    content: '';
-    position: absolute;
-    background: url(../images/img-ladder.png) no-repeat;
-    top: 58%;
-    left: 8%;
-    width: 100%;
-    height: 100%; }
+  .booking .booking-form {
+    padding-right: 10%;
+    padding-top: 10px; }
+    .booking .booking-form .form-row label {
+      font-size: 16px;
+      margin-left: -2%;
+      text-align: right;
+      color: #fff;
+      text-shadow: 0px 0px 2px #222;
+      z-index: 10; }
+    .booking .booking-form .form-row input, .booking .booking-form .form-row textarea, .booking .booking-form .form-row select {
+      min-height: 31px;
+      border: solid 3px #a7d1e6;
+      border-radius: 7px;
+      color: #299fca;
+      z-index: 10;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 13px; }
+    .booking .booking-form a {
+      z-index: 10; }
+      .booking .booking-form a:before {
+        content: '';
+        position: absolute;
+        background: url(../images/img-ladder.png) no-repeat;
+        top: 58%;
+        left: 8%;
+        width: 100%;
+        height: 100%; }
 
 .yellow-btn {
   float: right;
@@ -7787,10 +7805,6 @@ body {
   box-shadow: 0px 5px 5px -5px #000;
   z-index: 1; }
 
-.ladder {
-  margin-top: -20%;
-  padding-left: -3%; }
-
 .spec-area {
   z-index: 3;
   color: #fff;
@@ -7807,10 +7821,11 @@ body {
     .spec-area .spec-off .img-col {
       width: 25%; }
     .spec-area .spec-off .text-col {
-      font-size: 12px;
       width: 75%;
       padding-bottom: 15px;
       padding-left: 23px; }
+      .spec-area .spec-off .text-col p {
+        font-size: 12px; }
       .spec-area .spec-off .text-col a {
         padding: 5px 18px; }
       .spec-area .spec-off .text-col .price {
@@ -7830,13 +7845,20 @@ body {
     display: flex;
     padding: 4px 0; }
     .info-area .info a.main-link {
+      padding-left: 22px;
       width: 78%;
       color: #fff; }
       .info-area .info a.main-link:before {
         content: '\f144';
+        position: absolute;
+        left: 15px;
         font-family: FontAwesome;
-        color: #81ffff;
-        margin-right: 10px; }
+        color: #81ffff; }
+        .info-area .info a.main-link:before:hover {
+          color: #f00;
+          text-decoration: none; }
+        .info-area .info a.main-link:before:before:hover {
+          color: #f00; }
     .info-area .info span {
       width: 23%;
       color: #fff; }
@@ -7847,6 +7869,8 @@ body {
     position: absolute;
     right: 7%;
     top: -53px; }
+  .info-area .tab-content {
+    color: #fff; }
   .info-area .nav-tabs {
     border-bottom-color: #81ffff; }
     .info-area .nav-tabs li {
@@ -7884,9 +7908,10 @@ body {
     z-index: 10; }
   .map .speech-bubble {
     display: none;
+    z-index: 5;
     position: absolute;
-    top: -430px;
-    left: 165px;
+    top: -400px;
+    left: 175px;
     width: 230px;
     height: 240px;
     line-height: 240px;
@@ -7947,6 +7972,9 @@ body {
     height: 220px;
     top: -414px;
     left: 0; }
+    .map li#area2 .speech-bubble {
+      top: 0;
+      left: 50px; }
   .map li#area3 {
     background-image: url(../images/img-map-area3.png);
     width: 138px;
@@ -7981,7 +8009,9 @@ footer {
   footer .social-col {
     padding-right: 2%; }
   footer .adress-col {
-    padding-left: 4%; }
+    padding-left: 4%;
+    font-size: 12px;
+    font-weight: 100; }
   footer .contact-col {
     margin-left: -5%;
     padding-right: 3%; }
@@ -7989,6 +8019,7 @@ footer {
       padding-left: 5px;
       list-style-type: none; }
       footer .contact-col .contact textarea {
+        resize: none;
         width: 100%;
         height: 4em; }
       footer .contact-col .contact button {
@@ -8007,13 +8038,6 @@ footer {
     footer input::placeholder, footer textarea::placeholder {
       color: #80a2b3;
       padding-left: 11px; }
-  footer .addr {
-    list-style-type: none;
-    padding: 0; }
-    footer .addr li {
-      padding: 4px 0;
-      font-size: 12px;
-      font-weight: 100; }
   footer button {
     border: none;
     border-radius: 6px;
