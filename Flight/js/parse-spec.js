@@ -1,5 +1,5 @@
 var xmlhttpSp = new XMLHttpRequest();
-var urlSp = "/request/special-offers.txt";
+var urlSp = "./request/special-offers.txt";
 
 xmlhttpSp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
