@@ -1,0 +1,14 @@
+[
+{
+"img": "images/img-spc-off-1.png",
+"title": "1914 translation",
+"detiles": "But I must explain to you how all this mistaken idea of denouncing",
+"price": "700$"
+},
+{
+"img": "images/img-spc-off-2.png",
+"title": "1914 translation",
+"detiles": "But I must explain to you how all this mistaken idea of denouncing",
+"price": "700$"
+}
+]

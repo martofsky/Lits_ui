@@ -8,10 +8,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Safari Tour</title>
+  <script type="text/javascript" src="js/image-map.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/image-map.js"></script>
-  <script type="text/javascript" src="js/bubble.js"></script>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -71,43 +70,22 @@
           </div>
           <div class="col-md-4 booking">
             <div class="ribbon"></div>
-            <form class="row booking-form">
-              <div class="row form-row"><label class="col-md-5" for="name">Name :</label>
-              <input class="col-md-7" type="text" id="name" name="name"></div>
-              <div class="row form-row"><label class="col-md-5" for="email">email :</label>
-              <input class="col-md-7" type="text" id="email" name="mail"></div>
-              <div class="row form-row"><label class="col-md-5" for="package">Package :</label>
-              <select class="col-md-7">
+            <form class="booking-form">
+              <div class="form-row"><label for="name">Name :</label><input type="text" id="name" name="name"></div>
+              <div class="form-row"><label for="email">email :</label><input type="text" id="email" name="mail"></div>
+              <div class="form-row"><label for="package">Package :</label>
+              <select>
                 <option value="USA Packages">USA Packages</option>
                 <option selected value="Africa Packages">Africa Packages</option>
-                </select></div>
-              <div class="row form-row"><label class="col-md-5" for="message">message :</label>
-              <textarea class="col-md-7" rows="2" id="message"></textarea></div>
+              </select></div>
+              <div class="form-row"><label for="message">message :</label><textarea rows="2" id="message"></textarea></div>
               <a href="#" class="yellow-btn">Submit</a>
             </form>
           </div>
         </div>
-      </div>
-      <div class="container">
         <div class="row">
-          <div class="col-md-5 spec-area">
+          <div id="spec" class="col-md-5 spec-area">
             <h3>Our special offers</h3>
-            <div class="row spec-off">
-              <div class="col-md-4 img-col"><img src="images/img-spc-off-1.png" alt="img"></div>
-              <div class="col-md-8 text-col">
-                <h4>1914 translation</h4>
-                <p>But I must explain to you how all this mistaken idea of denouncing</p>
-                <span class="price">700$</span>
-                <a href="#" class="yellow-btn">Read more</a></div>
-            </div>
-            <div class="row spec-off">
-              <div class="col-md-4 img-col"><img src="images/img-spc-off-2.png" alt="img"></div>
-              <div class="col-md-8 text-col">
-                <h4>1914 translation</h4>
-                <p>But I must explain to you how all this mistaken idea of denouncing</p>
-                <span class="price">700$</span>
-                <a href="#" class="yellow-btn">Read more</a></div>
-            </div>
           </div>
           <div class="col-md-7 info-area">
             <img src="images/offer-logo.png" class="offer-logo" alt="logo">
@@ -117,46 +95,6 @@
             </ul>
             <div class="tab-content">
               <div id="tours" class="tab-pane fade in active">
-                <div class="info">
-                  <a href="#" class="main-link">Lorem Ipsum is simply dummy text simply</a>
-                  <span class="duration">10 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
-                <div class="info">
-                  <a href="#" class="main-link">Printing and typesetting industry typesetting</a>
-                  <span class="duration">10 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
-                <div class="info">
-                  <a href="#" class="main-link">Has been the industry's standard </a>
-                  <span class="duration">11 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
-                <div class="info">
-                  <a href="#" class="main-link">Dummy text ever since the 1500s Ipsum is simpl</a>
-                  <span class="duration">22 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
-                <div class="info">
-                  <a href="#" class="main-link">Lorem Ipsum is simply dummy text simply </a>
-                  <span class="duration">13 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
-                <div class="info">
-                  <a href="#" class="main-link">Printing and typesetting industry Printing </a>
-                  <span class="duration">17 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
-                <div class="info">
-                  <a href="#" class="main-link">Has been the industry's standard </a>
-                  <span class="duration">19 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
-                <div class="info">
-                  <a href="#" class="main-link">Dummy text ever since the the industry</a>
-                  <span class="duration">16 Days</span>
-                  <a href="#" class="more-link">more details</a>
-                </div>
               </div>
               <div id="photos" class="tab-pane fade">
                 <h3>PHOTOS</h3>
@@ -173,12 +111,275 @@
         <h5>Click on map</h5>
         <img id="Image-Maps-Com-image-maps-2017-06-14-142539" src="images/img-map.png" usemap="#map" alt="" />
         <ul>
-          <li id="area1"><a href="#">area1</a></li><span id="bubble1" class="speech-bubble"></span>
-          <li id="area2"><a href="#">area2</a></li><span id="bubble2" class="speech-bubble"></span>
-          <li id="area3"><a href="#">area3</a></li><span id="bubble3" class="speech-bubble"></span>
-          <li id="area4"><a href="#">area4</a></li><span id="bubble4" class="speech-bubble"></span>
-          <li id="area5"><a href="#">area5</a></li><span id="bubble5" class="speech-bubble"></span>
-          <li id="area6"><a href="#">area6</a></li><span id="bubble6" class="speech-bubble"></span>
+          <li id="area1"><a href="#">area1</a></li>
+            <span id="bubble1" class="speech-bubble">
+              <div class="scroll-row">
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+              </div>
+              <h2>Africa Tourism</h2>
+            </span>
+          <li id="area2"><a href="#">area2</a></li>
+          <span id="bubble2" class="speech-bubble speech-bubble-top speech-bubble-left">
+              <div class="scroll-row">
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+              </div>
+              <h2>North America Tourism</h2>            
+            </span>
+
+          <li id="area3"><a href="#">area3</a></li>
+            <span id="bubble3" class="speech-bubble">
+              <div class="scroll-row">
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+              </div>
+              <h2>South America Tourism</h2>
+            </span>
+
+          <li id="area4"><a href="#">area4</a></li>
+            <span id="bubble4" class="speech-bubble speech-bubble-top">
+              <div class="row">
+                <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                <div class="text-col col-md-8">
+                  <h4>1914 translation</h4>
+                  <p>But I must explain to you how all this</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                <div class="text-col col-md-8">
+                  <h4>1914 translation</h4>
+                  <p>But I must explain to you how all this</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                <div class="text-col col-md-8">
+                  <h4>1914 translation</h4>
+                  <p>But I must explain to you how all this</p>
+                </div>
+              </div>
+            </span>
+
+          <li id="area5"><a href="#">area5</a></li>
+            <span id="bubble5" class="speech-bubble">
+              <div class="scroll-row">
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+              </div>
+              <h2>Australia Tourism</h2>
+            </span>
+
+          <li id="area6"><a href="#">area6</a></li>
+            <span id="bubble6" class="speech-bubble">
+              <div class="scroll-row">
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-1.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="img-col col-md-4"><img src="images/img-spc-off-2.png" alt="img"></div>
+                  <div class="text-col col-md-8">
+                    <h4>1914 translation</h4>
+                    <p>But I must explain to you how all this</p>
+                  </div>
+                </div>
+              </div>
+              <h2>Europ & Asia Tourism</h2>
+            </span>
+
         </ul>
         <map name="map" id="map">
         <area  alt="area1" title="" href="#" shape="poly" coords="476,294,464,292,457,289,453,287,449,288,447,294,444,293,443,289,440,289,437,293,434,294,433,298,427,293,422,288,421,284,416,280,413,276,410,272,406,272,405,266,406,262,407,260,407,253,406,248,404,245,407,240,412,237,415,232,418,228,421,224,424,220,428,218,431,214,434,210,437,206,438,204,448,204,454,204,457,199,479,201,479,208,487,213,495,216,502,218,506,215,512,214,523,217,532,218,534,214,541,220,542,228,543,236,549,243,551,252,556,259,564,268,571,276,575,275,580,272,588,271,588,279,585,282,582,288,578,294,564,306,556,313,557,322,557,334,563,342,558,350,548,357,546,363,546,370,542,374,539,378,537,384,533,388,532,393,525,398,523,400,519,401,515,400,510,400,505,401,502,401,500,398,499,394,497,386,493,381,492,375,491,366,487,362,486,357,482,354,484,343,487,336,489,328,486,325,485,320,478,310" style="outline:none;" target="_self"     />
@@ -234,17 +435,10 @@
       </div>
     </footer>
   </div>
-  <script>
-  //balloon
-document.getElementById('area1').addEventListener("click", () => {
-  var bubble = document.getElementById('bubble1');
-  if (bubble.style.display === 'none') {
-    bubble.style.display = 'block';
-  } else {
-    bubble.style.display = 'none';
-  }
-});
-  </script>
+
+  <script type="text/javascript" src="js/bubble.js"></script>
+  <script type="text/javascript" src="js/parse-info.js"></script>
+  <script type="text/javascript" src="js/parse-spec.js"></script>
 </body>
 
 </html>
