@@ -1,0 +1,58 @@
+[
+{
+"main": "Lorem Ipsum is simply dummy text simply",
+"url": "#",
+"dur": "10 Days",
+"more": "more details",
+"moreUrl": "#"
+},
+{
+"main": "Printing and typesetting industry typesetting",
+"url": "#",
+"dur": "10 Days",
+"more": "more details",
+"moreUrl": "#"
+},
+{
+"main": "Has been the industry's standard",
+"url": "#",
+"dur": "11 Days",
+"more": "more details",
+"moreUrl": "#"
+},
+{
+"main": "Dummy text ever since the 1500s Ipsum is simpl",
+"url": "#",
+"dur": "22 Days",
+"more": "more details",
+"moreUrl": "#"
+},
+{
+"main": "Lorem Ipsum is simply dummy text simply",
+"url": "#",
+"dur": "13 Days",
+"more": "more details",
+"moreUrl": "#"
+},
+{
+"main": "Printing and typesetting industry Printing",
+"url": "#",
+"dur": "17 Days",
+"more": "more details",
+"moreUrl": "#"
+},
+{
+"main": "Has been the industry's standard",
+"url": "#",
+"dur": "19 Days",
+"more": "more details",
+"moreUrl": "#"
+},
+{
+"main": "Dummy text ever since the the industry",
+"url": "#",
+"dur": "16 Days",
+"more": "more details",
+"moreUrl": "#"
+}
+]
